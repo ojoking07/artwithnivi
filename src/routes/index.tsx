@@ -74,7 +74,7 @@ function Index() {
               <Heart className="text-primary" size={20} />
               <div>
                 <p className="text-sm font-medium">"The best night out we've had in months."</p>
-                <p className="text-xs text-muted-foreground">— Sara, Princeton</p>
+                <p className="text-xs text-muted-foreground">— Dishant, Lawrence</p>
               </div>
             </div>
           </div>
