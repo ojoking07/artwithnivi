@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, Palette, Users, Sparkles, Calendar, Heart, MapPin } from "lucide-react";
+import { ArrowRight, Wine, Users, Sparkles, Calendar, Heart, MapPin } from "lucide-react";
 import { Layout } from "@/components/layout";
 import hero from "@/assets/hero-paint-pour.jpg";
 import paintNight from "@/assets/paint-night.jpg";
@@ -8,13 +8,12 @@ import macrame from "@/assets/macrame.jpg";
 import pour from "@/assets/art-pour-1.jpg";
 import canvas from "@/assets/art-canvas.jpg";
 import corporate from "@/assets/corporate.jpg";
-import kids from "@/assets/kids.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Nivi Arts — Mobile Art Experiences in Central NJ" },
-      { name: "description", content: "Artist-led paint nights, private parties, corporate workshops, and weekend art classes in Princeton, West Windsor & beyond." },
+      { name: "description", content: "Artist-led sip-and-paint nights, private parties, corporate workshops, and weekend art classes in Princeton, West Windsor & beyond." },
       { property: "og:title", content: "Nivi Arts — Mobile Art Experiences" },
       { property: "og:description", content: "Real art experiences, led by a real artist — anywhere you want to gather." },
     ],
@@ -36,8 +35,8 @@ function Index() {
               Real art, <em className="text-primary not-italic">made together.</em>
             </h1>
             <p className="mt-6 max-w-lg text-lg text-muted-foreground text-balance">
-              Mobile, artist-led experiences across central New Jersey — paint nights,
-              private parties, corporate workshops, and weekend classes you'll
+              Mobile, artist-led experiences across central New Jersey — sip-and-paint
+              nights, private parties, corporate workshops, and weekend classes you'll
               actually want to hang on the wall.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
@@ -88,20 +87,19 @@ function Index() {
             <div>
               <p className="text-sm font-medium tracking-wider uppercase text-primary">What we offer</p>
               <h2 className="mt-2 font-display text-4xl sm:text-5xl text-balance">
-                Four ways to make something together.
+                Three ways to make something together.
               </h2>
             </div>
             <Link to="/services" className="text-sm font-medium text-primary inline-flex items-center gap-1 hover:gap-2 transition-all">
               View all services <ArrowRight size={14} />
             </Link>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { img: paintNight, title: "Public Paint Nights", price: "from $50/seat", icon: Palette, desc: "2-hour guided sessions at our partner venues. No experience needed." },
-              { img: corporate, title: "Private Parties", price: "from $65/seat", icon: Users, desc: "Birthdays, showers, girls' nights — at home or your favorite venue." },
-              { img: hero, title: "Corporate Workshops", price: "from $75/seat", icon: Sparkles, desc: "Team-building, DEI, and wellness sessions tailored to your team." },
-              { img: kids, title: "Kids & Family", price: "from $45/day", icon: Heart, desc: "Summer camps, birthday parties, and after-school art clubs." },
-            ].map(({ img, title, price, icon: Icon, desc }) => (
+              { img: hero, title: "Private Parties", icon: Users, desc: "Birthdays, showers, girls' nights — at home or your favorite venue." },
+              { img: corporate, title: "Corporate Workshops", icon: Sparkles, desc: "Team-building, DEI, and wellness sessions tailored to your team." },
+              { img: paintNight, title: "Sip and Paint (Wine)", icon: Wine, desc: "Relaxed painting nights with wine at your home or a venue." },
+            ].map(({ img, title, icon: Icon, desc }) => (
               <article key={title} className="group rounded-2xl border border-border bg-background overflow-hidden hover:shadow-[var(--shadow-card)] transition-shadow">
                 <div className="aspect-[4/3] overflow-hidden">
                   <img src={img} alt={title} loading="lazy" className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-700" />
@@ -109,7 +107,7 @@ function Index() {
                 <div className="p-5">
                   <div className="flex items-center gap-2 text-primary">
                     <Icon size={16} />
-                    <span className="text-xs uppercase tracking-wider">{price}</span>
+                    <span className="text-xs uppercase tracking-wider">Learn more</span>
                   </div>
                   <h3 className="mt-2 font-display text-xl">{title}</h3>
                   <p className="mt-2 text-sm text-muted-foreground">{desc}</p>
