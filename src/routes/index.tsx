@@ -12,10 +12,10 @@ import corporate from "@/assets/corporate.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Nivi Arts — Mobile Art Experiences in Central NJ" },
+      { title: "Nivi Arts Studio — Art Experiences in Central NJ" },
       { name: "description", content: "Artist-led sip-and-paint nights, private parties, corporate workshops, and weekend art classes in Princeton, West Windsor & beyond." },
-      { property: "og:title", content: "Nivi Arts — Mobile Art Experiences" },
-      { property: "og:description", content: "Real art experiences, led by a real artist — anywhere you want to gather." },
+      { property: "og:title", content: "Nivi Arts Studio — Art Experiences in Central NJ" },
+      { property: "og:description", content: "Artist-led sip-and-paint nights, private parties, corporate workshops, and weekend art classes in Princeton, West Windsor & beyond." },
     ],
   }),
   component: Index,
