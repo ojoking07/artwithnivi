@@ -21,12 +21,12 @@ export const Route = createFileRoute("/classes")({
 });
 
 const classes = [
-  { img: pour, title: "Acrylic Paint Pours", level: "Beginner", duration: "2.5 hrs", size: "Up to 10", price: 65, desc: "Learn the dirty pour, swipe, and ring pour techniques. Walk away with a glossy, frame-ready 10x10 canvas." },
-  { img: dried, title: "Dried Flower Art", level: "Beginner", duration: "2 hrs", size: "Up to 8", price: 55, desc: "Compose and mount botanicals into a delicate, archival piece using pressed petals and acrylic medium." },
-  { img: macrame, title: "Macramé Wall Hanging", level: "Beginner", duration: "3 hrs", size: "Up to 8", price: 70, desc: "Master four core knots while making a small wall hanging on a natural wood dowel." },
-  { img: canvas, title: "Acrylic Landscapes", level: "All levels", duration: "2.5 hrs", size: "Up to 10", price: 60, desc: "Guided step-by-step instruction to paint a sunset, mountain, or seascape on 11x14 canvas." },
-  { img: hero, title: "Mixed Media Studio", level: "Intermediate", duration: "3 hrs", size: "Up to 8", price: 75, desc: "Combine acrylic, ink, collage and texture mediums for a layered, gallery-style piece." },
-  { img: kids, title: "Kids' Art Club", level: "Ages 6–12", duration: "1.5 hrs", size: "Up to 10", price: 35, desc: "A rotating menu of crafts and paintings designed for young artists. Supplies and snack included." },
+  { img: pour, title: "Acrylic Paint Pours", level: "Beginner", duration: "2.5 hrs", size: "Up to 10", desc: "Learn the dirty pour, swipe, and ring pour techniques. Walk away with a glossy, frame-ready 10x10 canvas." },
+  { img: dried, title: "Dried Flower Art", level: "Beginner", duration: "2 hrs", size: "Up to 8", desc: "Compose and mount botanicals into a delicate, archival piece using pressed petals and acrylic medium." },
+  { img: macrame, title: "Macramé Wall Hanging", level: "Beginner", duration: "3 hrs", size: "Up to 8", desc: "Master four core knots while making a small wall hanging on a natural wood dowel." },
+  { img: canvas, title: "Acrylic Landscapes", level: "All levels", duration: "2.5 hrs", size: "Up to 10", desc: "Guided step-by-step instruction to paint a sunset, mountain, or seascape on 11x14 canvas." },
+  { img: hero, title: "Mixed Media Studio", level: "Intermediate", duration: "3 hrs", size: "Up to 8", desc: "Combine acrylic, ink, collage and texture mediums for a layered, gallery-style piece." },
+  { img: kids, title: "Kids' Art Club", level: "Ages 6–12", duration: "1.5 hrs", size: "Up to 10", desc: "A rotating menu of crafts and paintings designed for young artists. Supplies and snack included." },
 ];
 
 function Classes() {
@@ -51,9 +51,8 @@ function Classes() {
                 <img src={c.img} alt={c.title} loading="lazy" className="h-full w-full object-cover hover:scale-105 transition-transform duration-700" />
               </div>
               <div className="p-6 flex-1 flex flex-col">
-                <div className="flex items-center justify-between text-xs">
+                <div className="flex items-center text-xs">
                   <span className="rounded-full bg-secondary px-3 py-1 text-muted-foreground">{c.level}</span>
-                  <span className="font-display text-2xl text-primary">${c.price}</span>
                 </div>
                 <h3 className="mt-3 font-display text-2xl">{c.title}</h3>
                 <p className="mt-2 text-sm text-muted-foreground flex-1">{c.desc}</p>
