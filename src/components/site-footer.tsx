@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Instagram, Mail, MapPin } from "lucide-react";
+import logo from "@/assets/nivi-arts-logo.png.asset.json";
 
 export function SiteFooter() {
   return (
