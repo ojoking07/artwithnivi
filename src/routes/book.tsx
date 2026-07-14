@@ -25,14 +25,15 @@ function Book() {
   return (
     <Layout>
       <section className="container-page pt-16 pb-10">
-        <p className="text-sm font-medium tracking-wider uppercase text-primary">Booking</p>
+        <p className="text-sm font-medium tracking-wider uppercase text-primary">Weekend Classes</p>
         <h1 className="mt-3 font-display text-5xl sm:text-6xl text-balance max-w-3xl">
-          Pick a day. Pick a time. We'll handle the rest.
+          Book your spot in this month's weekend workshop.
         </h1>
         <p className="mt-5 max-w-2xl text-lg text-muted-foreground">
-          All weekend classes are bookable through our live calendar. For private
-          parties or corporate workshops, use the request form below and we'll get
-          back to you within 12 hours.
+          Nivi sets one class type per weekend, rotating through all six workshops
+          across the year. Open the calendar to see which project is running this
+          weekend and reserve your seat. Pricing varies by the difficulty of the
+          painting for that session and is listed on each calendar event.
         </p>
       </section>
 
@@ -43,10 +44,10 @@ function Book() {
               <h3 className="font-display text-xl">What to expect</h3>
               <ul className="mt-4 space-y-3 text-sm">
                 {([
-                  ["Instant confirmation", Calendar],
-                  ["Class is 2–3 hours", Clock],
-                  ["West Windsor studio or your venue", MapPin],
-                  ["All supplies included", CheckCircle2],
+                  ["One class type per weekend, rotating monthly", Calendar],
+                  ["Sessions run 2–3 hours", Clock],
+                  ["West Windsor studio", MapPin],
+                  ["Price varies by painting difficulty — shown on each event", CheckCircle2],
                 ] as const).map(([t, Icon]) => (
                   <li key={t} className="flex items-start gap-3 text-muted-foreground">
                     <Icon size={16} className="text-primary mt-0.5" />
