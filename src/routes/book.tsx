@@ -44,10 +44,10 @@ function Book() {
               <h3 className="font-display text-xl">What to expect</h3>
               <ul className="mt-4 space-y-3 text-sm">
                 {([
-                  ["Instant confirmation", Calendar],
-                  ["Class is 2–3 hours", Clock],
-                  ["West Windsor studio or your venue", MapPin],
-                  ["All supplies included", CheckCircle2],
+                  ["One class type per weekend, rotating monthly", Calendar],
+                  ["Sessions run 2–3 hours", Clock],
+                  ["West Windsor studio", MapPin],
+                  ["Price varies by painting difficulty — shown on each event", CheckCircle2],
                 ] as const).map(([t, Icon]) => (
                   <li key={t} className="flex items-start gap-3 text-muted-foreground">
                     <Icon size={16} className="text-primary mt-0.5" />
