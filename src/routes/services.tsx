@@ -55,7 +55,7 @@ function Services() {
                 ))}
               </ul>
               <div className="mt-7 flex flex-wrap gap-3">
-                <Link to="/book" className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground hover:opacity-90 transition">
+                <Link to="/contact" className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground hover:opacity-90 transition">
                   Book this <ArrowRight size={14}/>
                 </Link>
                 <Link to="/contact" className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm font-medium hover:bg-muted transition">

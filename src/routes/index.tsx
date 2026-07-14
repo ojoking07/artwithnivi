@@ -80,6 +80,39 @@ function Index() {
         </div>
       </section>
 
+      {/* Classes teaser */}
+      <section className="container-page py-24">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="order-2 lg:order-1 grid grid-cols-2 gap-4">
+            <img src={pour} alt="Acrylic paint pour" loading="lazy" className="rounded-xl aspect-[3/4] object-cover" />
+            <img src={dried} alt="Dried flower art" loading="lazy" className="rounded-xl aspect-[3/4] object-cover mt-10" />
+            <img src={macrame} alt="Macramé wall hanging" loading="lazy" className="rounded-xl aspect-[3/4] object-cover" />
+            <img src={canvas} alt="Acrylic landscape" loading="lazy" className="rounded-xl aspect-[3/4] object-cover mt-10" />
+          </div>
+          <div className="order-1 lg:order-2">
+            <p className="text-sm font-medium tracking-wider uppercase text-primary">Weekend classes</p>
+            <h2 className="mt-2 font-display text-4xl sm:text-5xl text-balance">
+              Learn a new craft every Saturday & Sunday.
+            </h2>
+            <p className="mt-5 text-muted-foreground text-lg max-w-lg">
+              Small-group, beginner-friendly workshops in everything from paint pours to
+              dried flower art, macramé, and acrylic landscapes. Everyone leaves with a
+              finished piece.
+            </p>
+            <ul className="mt-8 grid sm:grid-cols-2 gap-3 text-sm">
+              {["Acrylic paint pours", "Dried flower art", "Macramé basics", "Canvas landscapes", "Mixed media", "Seasonal projects"].map((c) => (
+                <li key={c} className="flex items-center gap-2 rounded-lg bg-secondary px-3 py-2.5">
+                  <span className="h-1.5 w-1.5 rounded-full bg-primary" /> {c}
+                </li>
+              ))}
+            </ul>
+            <Link to="/classes" className="mt-8 inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-medium hover:bg-muted transition">
+              Explore all classes <ArrowRight size={16} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Services */}
       <section className="bg-card border-y border-border">
         <div className="container-page py-20">
@@ -114,39 +147,6 @@ function Index() {
                 </div>
               </article>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Classes teaser */}
-      <section className="container-page py-24">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="order-2 lg:order-1 grid grid-cols-2 gap-4">
-            <img src={pour} alt="Acrylic paint pour" loading="lazy" className="rounded-xl aspect-[3/4] object-cover" />
-            <img src={dried} alt="Dried flower art" loading="lazy" className="rounded-xl aspect-[3/4] object-cover mt-10" />
-            <img src={macrame} alt="Macramé wall hanging" loading="lazy" className="rounded-xl aspect-[3/4] object-cover" />
-            <img src={canvas} alt="Acrylic landscape" loading="lazy" className="rounded-xl aspect-[3/4] object-cover mt-10" />
-          </div>
-          <div className="order-1 lg:order-2">
-            <p className="text-sm font-medium tracking-wider uppercase text-primary">Weekend classes</p>
-            <h2 className="mt-2 font-display text-4xl sm:text-5xl text-balance">
-              Learn a new craft every Saturday & Sunday.
-            </h2>
-            <p className="mt-5 text-muted-foreground text-lg max-w-lg">
-              Small-group, beginner-friendly workshops in everything from paint pours to
-              dried flower art, macramé, and acrylic landscapes. Everyone leaves with a
-              finished piece.
-            </p>
-            <ul className="mt-8 grid sm:grid-cols-2 gap-3 text-sm">
-              {["Acrylic paint pours", "Dried flower art", "Macramé basics", "Canvas landscapes", "Mixed media", "Seasonal projects"].map((c) => (
-                <li key={c} className="flex items-center gap-2 rounded-lg bg-secondary px-3 py-2.5">
-                  <span className="h-1.5 w-1.5 rounded-full bg-primary" /> {c}
-                </li>
-              ))}
-            </ul>
-            <Link to="/classes" className="mt-8 inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-medium hover:bg-muted transition">
-              Explore all classes <ArrowRight size={16} />
-            </Link>
           </div>
         </div>
       </section>
