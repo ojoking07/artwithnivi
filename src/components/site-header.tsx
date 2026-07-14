@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/nivi-arts-logo.png.asset.json";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -17,9 +18,8 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/85 backdrop-blur">
       <div className="container-page flex h-16 items-center justify-between">
-        <Link to="/" className="flex items-center gap-2 group">
-          <span className="grid h-9 w-9 place-items-center rounded-full bg-primary text-primary-foreground font-display text-lg">N</span>
-          <span className="font-display text-xl tracking-tight">Nivi Arts</span>
+        <Link to="/" className="flex items-center gap-2 group" aria-label="Nivi Arts home">
+          <img src={logo.url} alt="Nivi Arts" className="h-11 w-auto" />
         </Link>
         <nav className="hidden md:flex items-center gap-7">
           {nav.map((n) => (

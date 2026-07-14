@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Instagram, Mail, MapPin } from "lucide-react";
+import logo from "@/assets/nivi-arts-logo.png.asset.json";
 
 export function SiteFooter() {
   return (
@@ -7,8 +8,7 @@ export function SiteFooter() {
       <div className="container-page py-14 grid gap-10 md:grid-cols-4">
         <div className="md:col-span-2">
           <div className="flex items-center gap-2">
-            <span className="grid h-9 w-9 place-items-center rounded-full bg-primary text-primary-foreground font-display text-lg">N</span>
-            <span className="font-display text-xl">Nivi Arts</span>
+            <img src={logo.url} alt="Nivi Arts" className="h-12 w-auto" />
           </div>
           <p className="mt-4 max-w-sm text-sm text-muted-foreground">
             Mobile, artist-led art experiences across Mercer, Middlesex, and Somerset

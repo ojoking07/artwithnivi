@@ -40,49 +40,61 @@
   --color-sage: var(--sage);
   --color-ink: var(--ink);
   --color-blush: var(--blush);
+  --color-brand-blue: var(--brand-blue);
+  --color-brand-orange: var(--brand-orange);
+  --color-brand-red: var(--brand-red);
+  --color-brand-purple: var(--brand-purple);
+  --color-brand-navy: var(--brand-navy);
 }
 
 :root {
-  --radius: 0.5rem;
+  --radius: 0.75rem;
 
-  /* Brand palette */
-  --cream: oklch(0.97 0.018 80);
-  --blush: oklch(0.9 0.04 30);
-  --terracotta: oklch(0.62 0.13 38);
-  --sage: oklch(0.62 0.05 145);
-  --ink: oklch(0.22 0.03 250);
+  /* Nivi Arts logo palette */
+  --brand-blue: oklch(0.65 0.18 240);
+  --brand-orange: oklch(0.75 0.17 65);
+  --brand-red: oklch(0.62 0.22 25);
+  --brand-purple: oklch(0.45 0.18 320);
+  --brand-navy: oklch(0.28 0.1 265);
 
-  --background: oklch(0.97 0.018 80);
-  --foreground: oklch(0.22 0.03 250);
+  --cream: oklch(0.99 0.005 90);
+  --blush: oklch(0.94 0.03 25);
+  --terracotta: oklch(0.62 0.22 25);
+  --sage: oklch(0.65 0.18 240);
+  --ink: oklch(0.22 0.05 265);
 
-  --card: oklch(0.99 0.012 85);
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.2 0.04 265);
+
+  --card: oklch(0.99 0.005 90);
   --card-foreground: var(--foreground);
-  --popover: oklch(0.99 0.012 85);
+  --popover: oklch(1 0 0);
   --popover-foreground: var(--foreground);
 
-  --primary: oklch(0.62 0.13 38);
-  --primary-foreground: oklch(0.98 0.012 85);
+  --primary: oklch(0.62 0.22 25);
+  --primary-foreground: oklch(1 0 0);
 
-  --secondary: oklch(0.92 0.025 80);
+  --secondary: oklch(0.96 0.012 240);
   --secondary-foreground: var(--foreground);
 
-  --muted: oklch(0.93 0.022 80);
-  --muted-foreground: oklch(0.45 0.025 60);
+  --muted: oklch(0.96 0.008 240);
+  --muted-foreground: oklch(0.48 0.03 260);
 
-  --accent: oklch(0.62 0.05 145);
-  --accent-foreground: oklch(0.98 0.012 85);
+  --accent: oklch(0.65 0.18 240);
+  --accent-foreground: oklch(1 0 0);
 
   --destructive: oklch(0.55 0.22 27);
   --destructive-foreground: oklch(0.98 0.012 85);
 
-  --border: oklch(0.86 0.022 70);
-  --input: oklch(0.86 0.022 70);
-  --ring: oklch(0.62 0.13 38);
+  --border: oklch(0.9 0.015 250);
+  --input: oklch(0.9 0.015 250);
+  --ring: oklch(0.62 0.22 25);
 
-  --gradient-warm: linear-gradient(135deg, oklch(0.95 0.04 60), oklch(0.88 0.06 40));
-  --gradient-hero: linear-gradient(180deg, transparent 0%, oklch(0.97 0.018 80 / 0.4) 60%, var(--cream) 100%);
-  --shadow-soft: 0 20px 60px -30px oklch(0.22 0.03 250 / 0.25);
-  --shadow-card: 0 4px 20px -8px oklch(0.22 0.03 250 / 0.15);
+  --gradient-warm: linear-gradient(135deg, oklch(0.75 0.17 65), oklch(0.62 0.22 25));
+  --gradient-hero: linear-gradient(135deg, oklch(0.65 0.18 240 / 0.12), oklch(0.75 0.17 65 / 0.12), oklch(0.45 0.18 320 / 0.12));
+  --gradient-rainbow: linear-gradient(90deg, oklch(0.65 0.18 240), oklch(0.75 0.17 65), oklch(0.62 0.22 25), oklch(0.45 0.18 320), oklch(0.28 0.1 265));
+  --shadow-soft: 0 20px 60px -30px oklch(0.28 0.1 265 / 0.3);
+  --shadow-card: 0 4px 20px -8px oklch(0.28 0.1 265 / 0.18);
 }
 
 .dark {
