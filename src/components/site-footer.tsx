@@ -21,7 +21,6 @@ export function SiteFooter() {
             <li><Link to="/classes" className="hover:text-foreground">Classes</Link></li>
             <li><Link to="/services" className="hover:text-foreground">Services</Link></li>
             <li><Link to="/gallery" className="hover:text-foreground">Gallery</Link></li>
-            <li><Link to="/about" className="hover:text-foreground">About Nivi</Link></li>
             <li><Link to="/book" className="hover:text-foreground">Book a class</Link></li>
           </ul>
         </div>
