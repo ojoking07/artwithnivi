@@ -9,7 +9,7 @@ export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
       { title: "Services — Nivi Arts" },
-      { name: "description", content: "Private parties, corporate workshops, and sip-and-paint wine nights across central NJ. Artist-led, fully mobile experiences." },
+      { name: "description", content: "Private parties, corporate workshops, and sip-and-paint wine nights at the Nivi Arts studio in central NJ. Artist-led, intimate experiences." },
       { property: "og:title", content: "Services — Nivi Arts" },
       { property: "og:description", content: "Private parties, corporate workshops, and sip-and-paint wine nights across central NJ." },
     ],
@@ -18,9 +18,9 @@ export const Route = createFileRoute("/services")({
 });
 
 const tiers = [
-  { img: hero, name: "Private Parties", desc: "Birthdays, bridal showers, bachelorettes, and girls' nights — hosted at your home or chosen venue.", features: ["Travel within 20 miles included", "Choose your project + colors", "Custom invite design (optional)", "Setup, cleanup & all supplies"] },
-  { img: corporate, name: "Corporate Workshops", desc: "Team-building, DEI, and wellness sessions for hybrid and in-office teams. Branded canvas option available.", features: ["Custom theme tied to your team", "Onsite delivery + cleanup", "Branded canvas / co-paint option", "Invoicing & W-9 available"] },
-  { img: paintNight, name: "Sip and Paint (Wine)", desc: "Relaxed, guided painting nights paired with wine at home, a winery, or your favorite gathering spot.", features: ["Canvas, paints & supplies", "2 hours of guided instruction", "Reference imagery + custom theme", "Wine-friendly, easygoing vibe"] },
+  { img: hero, name: "Private Parties", desc: "Birthdays, bridal showers, bachelorettes, and girls' nights — hosted in the Nivi Arts studio.", features: ["Private studio space", "Choose your project + colors", "Custom invite design (optional)", "Setup, cleanup & all supplies"] },
+  { img: corporate, name: "Corporate Workshops", desc: "Team-building, DEI, and wellness sessions for teams of all sizes. Branded canvas option available.", features: ["Custom theme tied to your team", "Studio setup + cleanup", "Branded canvas / co-paint option", "Invoicing & W-9 available"] },
+  { img: paintNight, name: "Sip and Paint (Wine)", desc: "Relaxed, guided painting nights paired with wine in the Nivi Arts studio.", features: ["Canvas, paints & supplies", "2 hours of guided instruction", "Reference imagery + custom theme", "Wine-friendly, easygoing vibe"] },
 ];
 
 function Services() {
@@ -32,8 +32,8 @@ function Services() {
           One artist. Three ways to gather.
         </h1>
         <p className="mt-5 max-w-2xl text-lg text-muted-foreground">
-          Whether it's a quiet party at home or a 30-person company offsite, every
-          experience is led personally by Nivi — no franchises, no scripts.
+          Whether it's a quiet party or a 30-person company workshop, every
+          experience is led personally by Nivi in the West Windsor studio — no franchises, no scripts.
         </p>
       </section>
 

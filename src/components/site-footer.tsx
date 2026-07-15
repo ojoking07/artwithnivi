@@ -11,8 +11,8 @@ export function SiteFooter() {
             <img src={logo.url} alt="Nivi Arts" className="h-12 w-auto" />
           </div>
           <p className="mt-4 max-w-sm text-sm text-muted-foreground">
-            Mobile, artist-led art experiences across Mercer, Middlesex, and Somerset
-            counties. Real art, real instruction, anywhere you gather.
+            Artist-led art experiences at the Nivi Arts studio in West Windsor, NJ.
+            Real art, real instruction, in a creative space built for making together.
           </p>
         </div>
         <div>
