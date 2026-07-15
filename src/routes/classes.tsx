@@ -7,7 +7,7 @@ import dried from "@/assets/dried-flowers.jpg";
 import macrame from "@/assets/macrame.jpg";
 import canvas from "@/assets/art-canvas.jpg";
 import hero from "@/assets/hero-paint-pour.jpg";
-import kids from "@/assets/kids.jpg";
+import seasonal from "@/assets/seasonal-projects.jpg";
 
 export const Route = createFileRoute("/classes")({
   head: () => ({
