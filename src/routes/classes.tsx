@@ -7,7 +7,7 @@ import dried from "@/assets/dried-flowers.jpg";
 import macrame from "@/assets/macrame.jpg";
 import canvas from "@/assets/art-canvas.jpg";
 import hero from "@/assets/hero-paint-pour.jpg";
-import kids from "@/assets/kids.jpg";
+import seasonal from "@/assets/seasonal-projects.jpg";
 
 export const Route = createFileRoute("/classes")({
   head: () => ({
@@ -27,7 +27,7 @@ const classes = [
   { img: macrame, title: "Macramé Wall Hanging", level: "Beginner", duration: "3 hrs", size: "Up to 8", desc: "Master four core knots while making a small wall hanging on a natural wood dowel." },
   { img: canvas, title: "Acrylic Landscapes", level: "All levels", duration: "2.5 hrs", size: "Up to 10", desc: "Guided step-by-step instruction to paint a sunset, mountain, or seascape on 11x14 canvas." },
   { img: hero, title: "Mixed Media Studio", level: "Intermediate", duration: "3 hrs", size: "Up to 8", desc: "Combine acrylic, ink, collage and texture mediums for a layered, gallery-style piece." },
-  { img: kids, title: "Seasonal Projects", level: "All ages", duration: "1.5 hrs", size: "Up to 10", desc: "Create a festive, season-inspired piece using natural materials and themed colors. Each month brings a new project — wreaths, garlands, ornaments, or table decor — to celebrate the time of year." },
+  { img: seasonal, title: "Seasonal Projects", level: "All ages", duration: "1.5 hrs", size: "Up to 10", desc: "Create a festive, season-inspired piece using natural materials and themed colors. Each month brings a new project — wreaths, garlands, ornaments, or table decor — to celebrate the time of year." },
 ];
 
 type Event = {
@@ -46,7 +46,7 @@ const months: { name: string; year: number; events: Event[] }[] = [
     year: 2026,
     events: [
       { day: "18", weekday: "Sat", time: "1:00 – 3:30 PM", title: "Acrylic Paint Pours", level: "Beginner", img: pour, location: "West Windsor Studio" },
-      { day: "19", weekday: "Sun", time: "11:00 AM – 12:30 PM", title: "Seasonal Projects", level: "All ages", img: kids, location: "West Windsor Studio" },
+      { day: "19", weekday: "Sun", time: "11:00 AM – 12:30 PM", title: "Seasonal Projects", level: "All ages", img: seasonal, location: "West Windsor Studio" },
       { day: "25", weekday: "Sat", time: "2:00 – 4:30 PM", title: "Acrylic Landscapes", level: "All levels", img: canvas, location: "West Windsor Studio" },
       { day: "26", weekday: "Sun", time: "1:00 – 3:00 PM", title: "Dried Flower Art", level: "Beginner", img: dried, location: "West Windsor Studio" },
     ],
@@ -58,7 +58,7 @@ const months: { name: string; year: number; events: Event[] }[] = [
       { day: "1", weekday: "Sat", time: "1:00 – 4:00 PM", title: "Macramé Wall Hanging", level: "Beginner", img: macrame, location: "West Windsor Studio" },
       { day: "2", weekday: "Sun", time: "2:00 – 4:30 PM", title: "Acrylic Paint Pours", level: "Beginner", img: pour, location: "West Windsor Studio" },
       { day: "8", weekday: "Sat", time: "1:00 – 4:00 PM", title: "Mixed Media Studio", level: "Intermediate", img: hero, location: "West Windsor Studio" },
-      { day: "9", weekday: "Sun", time: "11:00 AM – 12:30 PM", title: "Seasonal Projects", level: "All ages", img: kids, location: "West Windsor Studio" },
+      { day: "9", weekday: "Sun", time: "11:00 AM – 12:30 PM", title: "Seasonal Projects", level: "All ages", img: seasonal, location: "West Windsor Studio" },
       { day: "15", weekday: "Sat", time: "2:00 – 4:30 PM", title: "Acrylic Landscapes", level: "All levels", img: canvas, location: "West Windsor Studio" },
       { day: "16", weekday: "Sun", time: "1:00 – 3:00 PM", title: "Dried Flower Art", level: "Beginner", img: dried, location: "West Windsor Studio" },
       { day: "22", weekday: "Sat", time: "1:00 – 3:30 PM", title: "Acrylic Paint Pours", level: "Beginner", img: pour, location: "West Windsor Studio" },
@@ -72,7 +72,7 @@ const months: { name: string; year: number; events: Event[] }[] = [
       { day: "5", weekday: "Sat", time: "2:00 – 4:30 PM", title: "Acrylic Landscapes", level: "All levels", img: canvas, location: "West Windsor Studio" },
       { day: "6", weekday: "Sun", time: "1:00 – 3:00 PM", title: "Dried Flower Art", level: "Beginner", img: dried, location: "West Windsor Studio" },
       { day: "12", weekday: "Sat", time: "1:00 – 4:00 PM", title: "Mixed Media Studio", level: "Intermediate", img: hero, location: "West Windsor Studio" },
-      { day: "13", weekday: "Sun", time: "11:00 AM – 12:30 PM", title: "Seasonal Projects", level: "All ages", img: kids, location: "West Windsor Studio" },
+      { day: "13", weekday: "Sun", time: "11:00 AM – 12:30 PM", title: "Seasonal Projects", level: "All ages", img: seasonal, location: "West Windsor Studio" },
       { day: "19", weekday: "Sat", time: "1:00 – 3:30 PM", title: "Acrylic Paint Pours", level: "Beginner", img: pour, location: "West Windsor Studio" },
       { day: "20", weekday: "Sun", time: "1:00 – 4:00 PM", title: "Macramé Wall Hanging", level: "Beginner", img: macrame, location: "West Windsor Studio" },
     ],
