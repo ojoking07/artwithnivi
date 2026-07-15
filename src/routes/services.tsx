@@ -32,8 +32,8 @@ function Services() {
           One artist. Three ways to gather.
         </h1>
         <p className="mt-5 max-w-2xl text-lg text-muted-foreground">
-          Whether it's a quiet party at home or a 30-person company offsite, every
-          experience is led personally by Nivi — no franchises, no scripts.
+          Whether it's a quiet party or a 30-person company workshop, every
+          experience is led personally by Nivi in the West Windsor studio — no franchises, no scripts.
         </p>
       </section>
 
