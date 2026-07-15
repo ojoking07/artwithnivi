@@ -35,7 +35,7 @@ function Index() {
               Real art, <em className="text-primary not-italic">made together.</em>
             </h1>
             <p className="mt-6 max-w-lg text-lg text-muted-foreground text-balance">
-              Mobile, artist-led experiences across central New Jersey — sip-and-paint
+              Artist-led experiences at our studio in central New Jersey — sip-and-paint
               nights, private parties, corporate workshops, and weekend classes you'll
               actually want to hang on the wall.
             </p>
@@ -50,7 +50,7 @@ function Index() {
             <dl className="mt-12 grid grid-cols-3 gap-6 max-w-md">
               {[
                 ["8–30", "Group size"],
-                ["20 mi", "Mobile radius"],
+                ["W. Windsor", "Studio location"],
                 ["4.9", "Avg. rating"],
               ].map(([k, v]) => (
                 <div key={v}>
@@ -129,9 +129,9 @@ function Index() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { img: hero, title: "Private Parties", icon: Users, desc: "Birthdays, showers, girls' nights — at home or your favorite venue." },
+              { img: hero, title: "Private Parties", icon: Users, desc: "Birthdays, showers, girls' nights — in the Nivi Arts studio." },
               { img: corporate, title: "Corporate Workshops", icon: Sparkles, desc: "Team-building, DEI, and wellness sessions tailored to your team." },
-              { img: paintNight, title: "Sip and Paint (Wine)", icon: Wine, desc: "Relaxed painting nights with wine at your home or a venue." },
+              { img: paintNight, title: "Sip and Paint (Wine)", icon: Wine, desc: "Relaxed painting nights with wine in the Nivi Arts studio." },
             ].map(({ img, title, icon: Icon, desc }) => (
               <article key={title} className="group rounded-2xl border border-border bg-background overflow-hidden hover:shadow-[var(--shadow-card)] transition-shadow">
                 <div className="aspect-[4/3] overflow-hidden">
@@ -170,7 +170,7 @@ function Index() {
                 Open the calendar <ArrowRight size={16} />
               </Link>
               <Link to="/contact" className="inline-flex items-center gap-2 rounded-full border border-cream/30 px-6 py-3 text-sm font-medium hover:bg-cream/10 transition">
-                <MapPin size={16} /> Host us at your venue
+                <MapPin size={16} /> Visit the studio
               </Link>
             </div>
           </div>
