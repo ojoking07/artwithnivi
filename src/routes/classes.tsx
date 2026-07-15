@@ -27,7 +27,7 @@ const classes = [
   { img: macrame, title: "Macramé Wall Hanging", level: "Beginner", duration: "3 hrs", size: "Up to 8", desc: "Master four core knots while making a small wall hanging on a natural wood dowel." },
   { img: canvas, title: "Acrylic Landscapes", level: "All levels", duration: "2.5 hrs", size: "Up to 10", desc: "Guided step-by-step instruction to paint a sunset, mountain, or seascape on 11x14 canvas." },
   { img: hero, title: "Mixed Media Studio", level: "Intermediate", duration: "3 hrs", size: "Up to 8", desc: "Combine acrylic, ink, collage and texture mediums for a layered, gallery-style piece." },
-  { img: kids, title: "Kids' Art Club", level: "Ages 6–12", duration: "1.5 hrs", size: "Up to 10", desc: "A rotating menu of crafts and paintings designed for young artists. Supplies and snack included." },
+  { img: kids, title: "Seasonal Projects", level: "All ages", duration: "1.5 hrs", size: "Up to 10", desc: "Create a festive, season-inspired piece using natural materials and themed colors. Each month brings a new project — wreaths, garlands, ornaments, or table decor — to celebrate the time of year." },
 ];
 
 type Event = {
