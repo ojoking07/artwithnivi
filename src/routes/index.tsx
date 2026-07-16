@@ -47,7 +47,7 @@ function Index() {
                 See what we offer
               </Link>
             </div>
-            <dl className="mt-12 grid grid-cols-3 gap-6 max-w-md">
+            <dl className="mt-12 grid grid-cols-3 gap-6 max-w-md text-center">
               {[
                 ["8–30", "Group size"],
                 ["W. Windsor", "Studio location"],
