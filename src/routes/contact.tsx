@@ -43,8 +43,8 @@ function Contact() {
               <li className="flex items-start gap-4">
                 <span className="grid h-11 w-11 place-items-center rounded-full bg-secondary text-primary"><MapPin size={18}/></span>
                 <div>
-                  <p className="text-sm uppercase tracking-wider text-muted-foreground">Service area</p>
-                  <p className="font-display text-xl">Mercer, Middlesex & Somerset Counties</p>
+                  <p className="text-sm uppercase tracking-wider text-muted-foreground">Studio</p>
+                  <p className="font-display text-xl">West Windsor, NJ</p>
                 </div>
               </li>
               <li className="flex items-start gap-4">
