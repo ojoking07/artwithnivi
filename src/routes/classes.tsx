@@ -22,12 +22,12 @@ export const Route = createFileRoute("/classes")({
 });
 
 const classes = [
-  { img: pour, title: "Acrylic Paint Pours", level: "Beginner", duration: "2.5 hrs", size: "Up to 10", desc: "Learn the dirty pour, swipe, and ring pour techniques. Walk away with a glossy, frame-ready 10x10 canvas." },
-  { img: dried, title: "Dried Flower Art", level: "Beginner", duration: "2 hrs", size: "Up to 8", desc: "Compose and mount botanicals into a delicate, archival piece using pressed petals and acrylic medium." },
-  { img: macrame, title: "Macramé Wall Hanging", level: "Beginner", duration: "3 hrs", size: "Up to 8", desc: "Master four core knots while making a small wall hanging on a natural wood dowel." },
-  { img: canvas, title: "Acrylic Landscapes", level: "All levels", duration: "2.5 hrs", size: "Up to 10", desc: "Guided step-by-step instruction to paint a sunset, mountain, or seascape on 11x14 canvas." },
-  { img: hero, title: "Mixed Media Studio", level: "Intermediate", duration: "3 hrs", size: "Up to 8", desc: "Combine acrylic, ink, collage and texture mediums for a layered, gallery-style piece." },
-  { img: seasonal, title: "Seasonal Projects", level: "All ages", duration: "1.5 hrs", size: "Up to 10", desc: "Create a festive, season-inspired piece using natural materials and themed colors. Each month brings a new project — wreaths, garlands, ornaments, or table decor — to celebrate the time of year." },
+  { img: pour, title: "Acrylic Paint Pours", duration: "2.5 hrs", size: "Up to 10", desc: "Learn the dirty pour, swipe, and ring pour techniques. Walk away with a glossy, frame-ready 10x10 canvas." },
+  { img: dried, title: "Dried Flower Art", duration: "2 hrs", size: "Up to 8", desc: "Compose and mount botanicals into a delicate, archival piece using pressed petals and acrylic medium." },
+  { img: macrame, title: "Macramé", duration: "3 hrs", size: "Up to 8", desc: "Master four core knots while making a small wall hanging on a natural wood dowel." },
+  { img: canvas, title: "Acrylic Landscapes", duration: "2.5 hrs", size: "Up to 10", desc: "Guided step-by-step instruction to paint a sunset, mountain, or seascape on 11x14 canvas." },
+  { img: hero, title: "Mixed Media Studio", duration: "3 hrs", size: "Up to 8", desc: "Combine acrylic, ink, collage and texture mediums for a layered, gallery-style piece." },
+  { img: seasonal, title: "Seasonal Projects", duration: "1.5 hrs", size: "Up to 10", desc: "Create a festive, season-inspired piece using natural materials and themed colors. Each month brings a new project — wreaths, garlands, ornaments, or table decor — to celebrate the time of year." },
 ];
 
 type Event = {
@@ -35,7 +35,6 @@ type Event = {
   weekday: string;
   time: string;
   title: string;
-  level: string;
   img: string;
   location: string;
 };
