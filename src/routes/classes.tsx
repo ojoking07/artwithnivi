@@ -44,36 +44,36 @@ const months: { name: string; year: number; events: Event[] }[] = [
     name: "July",
     year: 2026,
     events: [
-      { day: "18", weekday: "Sat", time: "1:00 – 3:30 PM", title: "Acrylic Paint Pours", level: "Beginner", img: pour, location: "West Windsor Studio" },
-      { day: "19", weekday: "Sun", time: "11:00 AM – 12:30 PM", title: "Seasonal Projects", level: "All ages", img: seasonal, location: "West Windsor Studio" },
-      { day: "25", weekday: "Sat", time: "2:00 – 4:30 PM", title: "Acrylic Landscapes", level: "All levels", img: canvas, location: "West Windsor Studio" },
-      { day: "26", weekday: "Sun", time: "1:00 – 3:00 PM", title: "Dried Flower Art", level: "Beginner", img: dried, location: "West Windsor Studio" },
+      { day: "18", weekday: "Sat", time: "1:00 – 3:30 PM", title: "Acrylic Paint Pours", img: pour, location: "West Windsor Studio" },
+      { day: "19", weekday: "Sun", time: "11:00 AM – 12:30 PM", title: "Seasonal Projects", img: seasonal, location: "West Windsor Studio" },
+      { day: "25", weekday: "Sat", time: "2:00 – 4:30 PM", title: "Acrylic Landscapes", img: canvas, location: "West Windsor Studio" },
+      { day: "26", weekday: "Sun", time: "1:00 – 3:00 PM", title: "Dried Flower Art", img: dried, location: "West Windsor Studio" },
     ],
   },
   {
     name: "August",
     year: 2026,
     events: [
-      { day: "1", weekday: "Sat", time: "1:00 – 4:00 PM", title: "Macramé Wall Hanging", level: "Beginner", img: macrame, location: "West Windsor Studio" },
-      { day: "2", weekday: "Sun", time: "2:00 – 4:30 PM", title: "Acrylic Paint Pours", level: "Beginner", img: pour, location: "West Windsor Studio" },
-      { day: "8", weekday: "Sat", time: "1:00 – 4:00 PM", title: "Mixed Media Studio", level: "Intermediate", img: hero, location: "West Windsor Studio" },
-      { day: "9", weekday: "Sun", time: "11:00 AM – 12:30 PM", title: "Seasonal Projects", level: "All ages", img: seasonal, location: "West Windsor Studio" },
-      { day: "15", weekday: "Sat", time: "2:00 – 4:30 PM", title: "Acrylic Landscapes", level: "All levels", img: canvas, location: "West Windsor Studio" },
-      { day: "16", weekday: "Sun", time: "1:00 – 3:00 PM", title: "Dried Flower Art", level: "Beginner", img: dried, location: "West Windsor Studio" },
-      { day: "22", weekday: "Sat", time: "1:00 – 3:30 PM", title: "Acrylic Paint Pours", level: "Beginner", img: pour, location: "West Windsor Studio" },
-      { day: "23", weekday: "Sun", time: "1:00 – 4:00 PM", title: "Macramé Wall Hanging", level: "Beginner", img: macrame, location: "West Windsor Studio" },
+      { day: "1", weekday: "Sat", time: "1:00 – 4:00 PM", title: "Macramé", img: macrame, location: "West Windsor Studio" },
+      { day: "2", weekday: "Sun", time: "2:00 – 4:30 PM", title: "Acrylic Paint Pours", img: pour, location: "West Windsor Studio" },
+      { day: "8", weekday: "Sat", time: "1:00 – 4:00 PM", title: "Mixed Media Studio", img: hero, location: "West Windsor Studio" },
+      { day: "9", weekday: "Sun", time: "11:00 AM – 12:30 PM", title: "Seasonal Projects", img: seasonal, location: "West Windsor Studio" },
+      { day: "15", weekday: "Sat", time: "2:00 – 4:30 PM", title: "Acrylic Landscapes", img: canvas, location: "West Windsor Studio" },
+      { day: "16", weekday: "Sun", time: "1:00 – 3:00 PM", title: "Dried Flower Art", img: dried, location: "West Windsor Studio" },
+      { day: "22", weekday: "Sat", time: "1:00 – 3:30 PM", title: "Acrylic Paint Pours", img: pour, location: "West Windsor Studio" },
+      { day: "23", weekday: "Sun", time: "1:00 – 4:00 PM", title: "Macramé", img: macrame, location: "West Windsor Studio" },
     ],
   },
   {
     name: "September",
     year: 2026,
     events: [
-      { day: "5", weekday: "Sat", time: "2:00 – 4:30 PM", title: "Acrylic Landscapes", level: "All levels", img: canvas, location: "West Windsor Studio" },
-      { day: "6", weekday: "Sun", time: "1:00 – 3:00 PM", title: "Dried Flower Art", level: "Beginner", img: dried, location: "West Windsor Studio" },
-      { day: "12", weekday: "Sat", time: "1:00 – 4:00 PM", title: "Mixed Media Studio", level: "Intermediate", img: hero, location: "West Windsor Studio" },
-      { day: "13", weekday: "Sun", time: "11:00 AM – 12:30 PM", title: "Seasonal Projects", level: "All ages", img: seasonal, location: "West Windsor Studio" },
-      { day: "19", weekday: "Sat", time: "1:00 – 3:30 PM", title: "Acrylic Paint Pours", level: "Beginner", img: pour, location: "West Windsor Studio" },
-      { day: "20", weekday: "Sun", time: "1:00 – 4:00 PM", title: "Macramé Wall Hanging", level: "Beginner", img: macrame, location: "West Windsor Studio" },
+      { day: "5", weekday: "Sat", time: "2:00 – 4:30 PM", title: "Acrylic Landscapes", img: canvas, location: "West Windsor Studio" },
+      { day: "6", weekday: "Sun", time: "1:00 – 3:00 PM", title: "Dried Flower Art", img: dried, location: "West Windsor Studio" },
+      { day: "12", weekday: "Sat", time: "1:00 – 4:00 PM", title: "Mixed Media Studio", img: hero, location: "West Windsor Studio" },
+      { day: "13", weekday: "Sun", time: "11:00 AM – 12:30 PM", title: "Seasonal Projects", img: seasonal, location: "West Windsor Studio" },
+      { day: "19", weekday: "Sat", time: "1:00 – 3:30 PM", title: "Acrylic Paint Pours", img: pour, location: "West Windsor Studio" },
+      { day: "20", weekday: "Sun", time: "1:00 – 4:00 PM", title: "Macramé", img: macrame, location: "West Windsor Studio" },
     ],
   },
 ];
@@ -125,10 +125,7 @@ function Classes() {
                   <img src={c.img} alt={c.title} loading="lazy" className="h-full w-full object-cover hover:scale-105 transition-transform duration-700" />
                 </div>
                 <div className="p-6 flex-1 flex flex-col">
-                  <div className="flex items-center text-xs">
-                    <span className="rounded-full bg-secondary px-3 py-1 text-muted-foreground">{c.level}</span>
-                  </div>
-                  <h3 className="mt-3 font-display text-2xl">{c.title}</h3>
+                  <h3 className="font-display text-2xl">{c.title}</h3>
                   <p className="mt-2 text-sm text-muted-foreground flex-1">{c.desc}</p>
                   <div className="mt-4 flex items-center gap-4 text-xs text-muted-foreground border-t border-border pt-4">
                     <span className="inline-flex items-center gap-1"><Clock size={13}/> {c.duration}</span>
@@ -189,7 +186,6 @@ function Classes() {
                           <div className="mt-1 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-muted-foreground">
                             <span className="inline-flex items-center gap-1"><Clock size={12}/> {e.time}</span>
                             <span className="inline-flex items-center gap-1"><MapPin size={12}/> {e.location}</span>
-                            <span className="rounded-full bg-secondary px-2 py-0.5">{e.level}</span>
                           </div>
                         </div>
 
