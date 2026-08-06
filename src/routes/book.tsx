@@ -9,7 +9,9 @@ export const Route = createFileRoute("/book")({
       { name: "description", content: "Pick a weekend workshop or private session straight from the Nivi Arts live booking calendar." },
       { property: "og:title", content: "Book a Class — Nivi Arts" },
       { property: "og:description", content: "Live Google Calendar booking for weekend art classes and private sessions." },
+      { property: "og:url", content: "https://artwithnivi.lovable.app/book" },
     ],
+    links: [{ rel: "canonical", href: "https://artwithnivi.lovable.app/book" }],
   }),
   component: Book,
 });
