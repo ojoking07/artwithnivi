@@ -59,7 +59,7 @@ function Book() {
               </ul>
             </div>
             <div className="rounded-2xl bg-secondary p-6">
-              <h3 className="font-display text-xl">Need something custom?</h3>
+              <h2 className="font-display text-xl">Need something custom?</h2>
               <p className="mt-2 text-sm text-muted-foreground">
                 Private parties of 10+ or corporate workshops — request a date and
                 we'll build the session around your group.

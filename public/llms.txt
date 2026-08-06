@@ -1,0 +1,14 @@
+# Nivi Arts
+
+> Artist-led sip-and-paint nights, private parties, corporate workshops, and weekend art classes at the Nivi Arts studio in West Windsor, New Jersey.
+
+Every experience is taught personally by Nivi at her West Windsor studio. Weekend workshops rotate through six class types and are booked through a live Google Calendar; private parties, corporate workshops, and sip-and-paint nights are arranged by request.
+
+## Pages
+
+- [Home](/): Overview of Nivi Arts, weekend classes, and studio experiences.
+- [Weekend Classes](/classes): The six workshop types and the month-by-month class calendar.
+- [Services](/services): Private parties, corporate workshops, and sip-and-paint (wine) nights.
+- [Gallery](/gallery): Finished pieces and photos from recent workshops and events.
+- [Book](/book): Live booking calendar for this month's weekend workshops.
+- [Contact](/contact): Enquiries for private parties, corporate workshops, and partnerships.
