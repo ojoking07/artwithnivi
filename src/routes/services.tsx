@@ -12,6 +12,22 @@ export const Route = createFileRoute("/services")({
       { name: "description", content: "Private parties, corporate workshops, and sip-and-paint wine nights at the Nivi Arts studio in central NJ. Artist-led, intimate experiences." },
       { property: "og:title", content: "Services — Nivi Arts" },
       { property: "og:description", content: "Private parties, corporate workshops, and sip-and-paint wine nights across central NJ." },
+      { property: "og:url", content: "https://artwithnivi.lovable.app/services" },
+    ],
+    links: [{ rel: "canonical", href: "https://artwithnivi.lovable.app/services" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Service",
+          name: "Private parties, corporate workshops & sip-and-paint nights",
+          serviceType: "Art experience",
+          provider: { "@type": "LocalBusiness", name: "Nivi Arts" },
+          areaServed: "West Windsor, NJ",
+          url: "https://artwithnivi.lovable.app/services",
+        }),
+      },
     ],
   }),
   component: Services,
