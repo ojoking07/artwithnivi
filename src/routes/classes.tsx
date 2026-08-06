@@ -134,8 +134,9 @@ function Classes() {
 
       {view === "types" ? (
         <section className="container-page pb-20">
+          <h2 className="sr-only">Class types</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {classes.map((c) => (
+
               <article key={c.title} className="rounded-2xl border border-border bg-card overflow-hidden flex flex-col">
                 <div className="aspect-[4/3] overflow-hidden">
                   <img src={c.img} alt={c.title} loading="lazy" className="h-full w-full object-cover hover:scale-105 transition-transform duration-700" />
