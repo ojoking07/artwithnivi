@@ -10,7 +10,9 @@ export const Route = createFileRoute("/contact")({
       { name: "description", content: "Get in touch with Nivi Arts for private parties, corporate workshops, or venue partnerships in central New Jersey." },
       { property: "og:title", content: "Contact — Nivi Arts" },
       { property: "og:description", content: "Reach out for private parties, corporate workshops, or venue partnerships." },
+      { property: "og:url", content: "https://artwithnivi.lovable.app/contact" },
     ],
+    links: [{ rel: "canonical", href: "https://artwithnivi.lovable.app/contact" }],
   }),
   component: Contact,
 });
