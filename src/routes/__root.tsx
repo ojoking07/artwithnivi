@@ -77,6 +77,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { name: "google-site-verification", content: "3biglwH1nODwM4Gs0CkGa0d-Ism8iVCGeOqI6nMteQU" },
       { title: "Nivi Arts Studio — Art Experiences in Central NJ" },
       { name: "description", content: "Artist-led sip-and-paint nights, private parties, corporate workshops, and weekend art classes in Princeton, West Windsor & beyond." },
       { name: "author", content: "Nivi Arts" },
