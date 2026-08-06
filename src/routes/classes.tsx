@@ -16,6 +16,22 @@ export const Route = createFileRoute("/classes")({
       { name: "description", content: "Browse weekend art classes by type or by month. Beginner-friendly Saturday & Sunday workshops in central NJ." },
       { property: "og:title", content: "Weekend Art Classes — Nivi Arts" },
       { property: "og:description", content: "Small-group weekend workshops in paint pours, macramé, dried flowers and more." },
+      { property: "og:url", content: "https://artwithnivi.lovable.app/classes" },
+    ],
+    links: [{ rel: "canonical", href: "https://artwithnivi.lovable.app/classes" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Service",
+          name: "Weekend Art Classes",
+          serviceType: "Art workshop",
+          provider: { "@type": "LocalBusiness", name: "Nivi Arts" },
+          areaServed: "West Windsor, NJ",
+          url: "https://artwithnivi.lovable.app/classes",
+        }),
+      },
     ],
   }),
   component: Classes,
