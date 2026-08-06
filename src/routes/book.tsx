@@ -43,7 +43,7 @@ function Book() {
         <div className="grid lg:grid-cols-3 gap-8">
           <aside className="space-y-6">
             <div className="rounded-2xl border border-border bg-card p-6">
-              <h3 className="font-display text-xl">What to expect</h3>
+              <h2 className="font-display text-xl">What to expect</h2>
               <ul className="mt-4 space-y-3 text-sm">
                 {([
                   ["One class type per weekend, rotating monthly", Calendar],
