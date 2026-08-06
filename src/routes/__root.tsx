@@ -98,6 +98,26 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
       { rel: "stylesheet", href: appCss },
     ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              name: "Nivi Arts",
+              url: "https://artwithnivi.lovable.app/",
+            },
+            {
+              "@type": "WebSite",
+              name: "Nivi Arts",
+              url: "https://artwithnivi.lovable.app/",
+            },
+          ],
+        }),
+      },
+    ],
   }),
   shellComponent: RootShell,
   component: RootComponent,

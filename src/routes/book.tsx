@@ -9,7 +9,9 @@ export const Route = createFileRoute("/book")({
       { name: "description", content: "Pick a weekend workshop or private session straight from the Nivi Arts live booking calendar." },
       { property: "og:title", content: "Book a Class — Nivi Arts" },
       { property: "og:description", content: "Live Google Calendar booking for weekend art classes and private sessions." },
+      { property: "og:url", content: "https://artwithnivi.lovable.app/book" },
     ],
+    links: [{ rel: "canonical", href: "https://artwithnivi.lovable.app/book" }],
   }),
   component: Book,
 });
@@ -41,7 +43,7 @@ function Book() {
         <div className="grid lg:grid-cols-3 gap-8">
           <aside className="space-y-6">
             <div className="rounded-2xl border border-border bg-card p-6">
-              <h3 className="font-display text-xl">What to expect</h3>
+              <h2 className="font-display text-xl">What to expect</h2>
               <ul className="mt-4 space-y-3 text-sm">
                 {([
                   ["One class type per weekend, rotating monthly", Calendar],
@@ -57,7 +59,7 @@ function Book() {
               </ul>
             </div>
             <div className="rounded-2xl bg-secondary p-6">
-              <h3 className="font-display text-xl">Need something custom?</h3>
+              <h2 className="font-display text-xl">Need something custom?</h2>
               <p className="mt-2 text-sm text-muted-foreground">
                 Private parties of 10+ or corporate workshops — request a date and
                 we'll build the session around your group.

@@ -16,6 +16,20 @@ export const Route = createFileRoute("/gallery")({
       { name: "description", content: "A look at recent paintings, workshops, parties, and finished pieces from Nivi Arts." },
       { property: "og:title", content: "Gallery — Nivi Arts" },
       { property: "og:description", content: "Recent work and event photography from Nivi Arts." },
+      { property: "og:url", content: "https://artwithnivi.lovable.app/gallery" },
+    ],
+    links: [{ rel: "canonical", href: "https://artwithnivi.lovable.app/gallery" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          name: "Nivi Arts Gallery",
+          description: "Recent paintings, workshops, parties, and finished pieces from Nivi Arts.",
+          url: "https://artwithnivi.lovable.app/gallery",
+        }),
+      },
     ],
   }),
   component: Gallery,

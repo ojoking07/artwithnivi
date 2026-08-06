@@ -16,6 +16,22 @@ export const Route = createFileRoute("/classes")({
       { name: "description", content: "Browse weekend art classes by type or by month. Beginner-friendly Saturday & Sunday workshops in central NJ." },
       { property: "og:title", content: "Weekend Art Classes — Nivi Arts" },
       { property: "og:description", content: "Small-group weekend workshops in paint pours, macramé, dried flowers and more." },
+      { property: "og:url", content: "https://artwithnivi.lovable.app/classes" },
+    ],
+    links: [{ rel: "canonical", href: "https://artwithnivi.lovable.app/classes" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Service",
+          name: "Weekend Art Classes",
+          serviceType: "Art workshop",
+          provider: { "@type": "LocalBusiness", name: "Nivi Arts" },
+          areaServed: "West Windsor, NJ",
+          url: "https://artwithnivi.lovable.app/classes",
+        }),
+      },
     ],
   }),
   component: Classes,
@@ -118,6 +134,7 @@ function Classes() {
 
       {view === "types" ? (
         <section className="container-page pb-20">
+          <h2 className="sr-only">Class types</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {classes.map((c) => (
               <article key={c.title} className="rounded-2xl border border-border bg-card overflow-hidden flex flex-col">

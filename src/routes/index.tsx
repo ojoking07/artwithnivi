@@ -16,6 +16,28 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "Artist-led sip-and-paint nights, private parties, corporate workshops, and weekend art classes in Princeton, West Windsor & beyond." },
       { property: "og:title", content: "Nivi Arts Studio — Art Experiences in Central NJ" },
       { property: "og:description", content: "Artist-led sip-and-paint nights, private parties, corporate workshops, and weekend art classes in Princeton, West Windsor & beyond." },
+      { property: "og:url", content: "https://artwithnivi.lovable.app/" },
+    ],
+    links: [{ rel: "canonical", href: "https://artwithnivi.lovable.app/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          name: "Nivi Arts",
+          url: "https://artwithnivi.lovable.app/",
+          description:
+            "Artist-led sip-and-paint nights, private parties, corporate workshops, and weekend art classes at the Nivi Arts studio in West Windsor, NJ.",
+          address: {
+            "@type": "PostalAddress",
+            addressLocality: "West Windsor",
+            addressRegion: "NJ",
+            addressCountry: "US",
+          },
+          email: "hello@niviarts.com",
+        }),
+      },
     ],
   }),
   component: Index,
